@@ -7,6 +7,9 @@ const saveButton = document.getElementById('save-image');
 
 let isDrawing = false;
 let startX, startY;
+const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+
+console.log("isMobile:",isMobile);
 
 // // Set canvas dimensions
 // canvas.width = window.innerWidth - 200;
