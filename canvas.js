@@ -8,9 +8,15 @@ const saveButton = document.getElementById('save-image');
 let isDrawing = false;
 let startX, startY;
 
-// Set canvas dimensions
-canvas.width = window.innerWidth - 100;
-canvas.height = window.innerHeight - 300;
+// // Set canvas dimensions
+// canvas.width = window.innerWidth - 200;
+// canvas.height = window.innerHeight - 200;
+// canvas.setAttribute("width", window.innerWidth);
+// canvas.setAttribute("height", window.innerHeight);
+// canvas.setAttribute("width", 1024);
+// canvas.setAttribute("height", 768);
+
+ctx.arc(100, 100, 50, 0, Math.PI * 2, false);
 
 // Set initial stroke color and width
 ctx.strokeStyle = strokeColorInput.value;

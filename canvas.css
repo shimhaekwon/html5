@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,25 +10,34 @@ body {
 .toolbar {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .toolbar label {
   margin-right: 5px;
 }
 
-.toolbar input[type="color"],
+.toolbar input[type="color"]{
+  margin-right: 5px;
+  width: 30px;
+}
+
 .toolbar input[type="range"] {
-  margin-right: 10px;
+  margin-right: 1px;
+  width: 50px;
 }
 
 #drawing-canvas {
   border: 1px solid #000;
   cursor: crosshair;
-  max-width: 100%;
-  max-height: 80vh;
+  /* max-width: 100%;
+  max-height: 80vh; */
+  /* width: 800px;
+  height: 600px; */
+  background: #eee;  
+  max-width: -webkit-fill-available;
 }
 
 .save-options {
-  margin-top: 10px;
+  margin-top: 5px;
 }
